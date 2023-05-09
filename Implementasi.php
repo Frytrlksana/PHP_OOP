@@ -9,85 +9,95 @@ require_once 'classcdrack.php';
 <head>
 	<title>Belanja Produk</title>
 	<style>
-		/* Style untuk tampilan produk */
-		.product-container {
-			border: 1px solid #ccc;
-			padding: 10px;
-			margin-bottom: 20px;
+		body {
+			background-color: #f5f5f5;
+			font-family: Arial, sans-serif;
 		}
-
+		.product {
+			background-color: #fff;
+			border: 1px solid #ddd;
+			padding: 20px;
+			margin-bottom: 20px;
+			box-shadow: 0px 2px 2px #ccc;
+			text-align: center;
+		}
 		.product-name {
+			font-size: 20px;
 			font-weight: bold;
-			font-size: 1.2em;
 			margin-bottom: 10px;
 		}
-
 		.product-price {
+			font-size: 18px;
 			font-weight: bold;
-			font-size: 1.2em;
 			margin-bottom: 10px;
 		}
-
 		.product-discount {
-			margin-top: 10px;
-		}
-
-		/* Style untuk tampilan CDMusic */
-		.cd-music-container {
-			border: 1px solid #ccc;
-			padding: 10px;
-			margin-bottom: 20px;
-		}
-
-		.cd-music-title {
-			font-weight: bold;
-			font-size: 1.2em;
+			font-size: 16px;
 			margin-bottom: 10px;
 		}
-
-		.cd-music-artist {
-			margin-bottom: 5px;
-		}
-
-		.cd-music-genre {
-			margin-bottom: 5px;
-		}
-
-		.cd-music-discount {
-			margin-top: 10px;
-		}
-
-		.cd-music-price {
-			font-weight: bold;
-			font-size: 1.2em;
-			margin-top: 10px;
-		}
-
-		/* Style untuk tampilan CDRack */
-		.cd-rack-container {
-			border: 1px solid #ccc;
-			padding: 10px;
+		.cdmusic, .cdrack {
+			background-color: #fff;
+			border: 1px solid #ddd;
+			padding: 20px;
 			margin-bottom: 20px;
+			box-shadow: 0px 2px 2px #ccc;
 		}
-
-		.cd-rack-title {
+		.cdmusic .product-name, .cdrack .product-name {
+			font-size: 20px;
 			font-weight: bold;
-			font-size: 1.2em;
+			margin-bottom: 10px;
+			text-align: center;
+		}
+		.cdmusic-artist {
+			font-size: 18px;
 			margin-bottom: 10px;
 		}
-
-		.cd-rack-capacity {
-			margin-bottom: 5px;
+		.cdmusic-genre {
+			font-size: 18px;
+			margin-bottom: 10px;
 		}
-
-		.cd-rack-model {
-			margin-bottom: 5px;
+		.cdmusic-discount {
+			font-size: 16px;
+			margin-bottom: 10px;
 		}
-
-		.cd-rack-price {
+		.cdmusic-price {
+			font-size: 20px;
 			font-weight: bold;
-			font-size: 1.2em;
+			margin-bottom: 10px;
+		}
+		.cdmusic-notes {
+			font-size: 14px;
+			color: #666;
 			margin-top: 10px;
+		}
+		.cdrack-capacity {
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+		.cdrack-model {
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+		.cdrack-discount {
+			font-size: 16px;
+			margin-bottom: 10px;
+		}
+		.cdrack-price {
+			font-size: 20px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		.cdrack-notes {
+			font-size: 14px;
+			color: #666;
+			margin-top: 10px;
+		}
+		hr {
+			border: none;
+			height: 1px;
+			background-color: #ddd;
+			margin-top: 20px;
+			margin-bottom: 20px;
 		}
 	</style>
 </head>
